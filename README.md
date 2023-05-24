@@ -13,20 +13,45 @@ of vessels and manually defined their routes, or automatically
 generate them from AIS data. Each vessel is equipped with global
 and local motion controllers complying with COLREGs.
 
-##Recommended Software Setup
+## Recommended Software Setup
+
 The recommended software setup for using this project is below:
 * Ubuntu Desktop 20.04 Focal (64-bit)
 * Gazebo 11.6.0+
 * ROS Noetic
 
-##Depencendies
+## Depencendies
+
 Because of the accurately modeled vessel and sea surface dynamics including
 environmental disturbances such as waves, water current and
 winds, we built this project as a ROS package for the VRX Simulation environment. <br/>
-For the tutorials about installing the VRX Classic, please refer to [here](https://github.com/osrf/vrx/wiki/vrx_classic_system_setup_tutorials):  
+For the tutorials about installing the VRX Classic, please refer to [here](https://github.com/osrf/vrx/wiki/vrx_classic_system_setup_tutorials)
 
+<br/>
 
+To install all the dependencies, please enter the command below:
+```
+pip install matplotlib
+pip install basemap
+pip install geopy
+install transforms3d
+sudo apt install -y 
 
+```
+
+## Installation of Multiple Vessels package
+
+After the VRX Classic and all the necessary depencencies are installed, you can install the Multiple Vessels package in this repository by following the steps below:
+* Download the `multiple_vessels` file from this repository in the workspace that VRX Classic is installed. After you open a terminal, enter these commands below:
+```
+cd ~/vrx_ws/src/vrx
+git clone https://github.com/FieldRoboticsLab/MultiVessel_Simulation.git
+```
+Upon downloading the package, use `catkin_make` to build the software
+```
+cd ~/vrx_ws
+catkin_make
+```
 
 ## Reference
 
