@@ -35,7 +35,6 @@ pip install matplotlib
 pip install basemap
 pip install geopy
 install transforms3d
-sudo apt install -y 
 ```
 
 ## Installation of Multiple Vessels package
