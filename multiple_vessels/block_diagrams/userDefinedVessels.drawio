@@ -1,0 +1,518 @@
+<mxfile host="Electron" modified="2023-05-22T11:50:38.928Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="jTAM36ZShg2bLOyVBeYw" version="21.2.8" type="device" pages="3">
+  <diagram name="Page-1" id="02ggqNyT7ilnZXBFp7ug">
+    <mxGraphModel dx="2537" dy="2065" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AohX79wTfvgvNfDyPwW6-1" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=15;startArrow=none;startFill=0;endArrow=block;endFill=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="241" y="-414" />
+              <mxPoint x="161" y="-394" />
+              <mxPoint x="431" y="-374" />
+              <mxPoint x="71" y="-224" />
+              <mxPoint x="491" y="-404" />
+            </Array>
+            <mxPoint x="31" y="-443" as="sourcePoint" />
+            <mxPoint x="1037" y="-60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ROS Parameters:&lt;br&gt;/Vessel1/Last_Reached_Global_Wp&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;&quot;&gt;/Vessel2/Last_Reached_Global_Wp&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;&quot;&gt;.&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;&quot;&gt;.&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;&quot;&gt;.&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;&quot;&gt;/VesselX/Last_Reached_Global_Wp&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="930" y="-253.5" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-3" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="230" y="-360" width="680" height="730" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-4" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-240" y="60" width="440" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-5" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Global Path Planner&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;strokeWidth=5;" parent="1" vertex="1">
+          <mxGeometry x="-160" y="-450" width="240" height="71" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=15;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="AohX79wTfvgvNfDyPwW6-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-7" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;user_defined_perception.py&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;strokeWidth=5;" parent="1" vertex="1">
+          <mxGeometry x="-230" y="220" width="405" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.359;entryY=0.024;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;entryPerimeter=0;" parent="1" target="AohX79wTfvgvNfDyPwW6-49" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1150" y="70" />
+              <mxPoint x="1150" y="70" />
+            </Array>
+            <mxPoint x="1037" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" target="AohX79wTfvgvNfDyPwW6-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="-320" />
+              <mxPoint x="413" y="-320" />
+            </Array>
+            <mxPoint x="20.05882352941171" y="80" as="sourcePoint" />
+            <mxPoint x="325" y="-320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-13" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;/Vessel1/Perception&lt;br&gt;/Vessel2/Perception&lt;br&gt;.&lt;br&gt;.&lt;br&gt;.&lt;br&gt;/VesselX/Perception&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=15;" parent="1" vertex="1">
+          <mxGeometry x="21" y="-319.5" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontSize=14;endArrow=classic;endFill=1;fillColor=#dae8fc;strokeColor=#6c8ebf;exitX=0;exitY=1;exitDx=0;exitDy=0;startArrow=oval;startFill=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="121" />
+              <mxPoint x="580" y="121" />
+            </Array>
+            <mxPoint x="580" y="-39.00000000000023" as="sourcePoint" />
+            <mxPoint x="580" y="291" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="AohX79wTfvgvNfDyPwW6-17" target="AohX79wTfvgvNfDyPwW6-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" target="AohX79wTfvgvNfDyPwW6-50" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="431" y="-40" as="sourcePoint" />
+            <mxPoint x="931" y="-40" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1038" y="-40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-17" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Switch mechanism for Global-Local Planning&lt;br&gt;,Trajectory Tracker&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=5;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="287.5" y="-76.8" width="250" height="96.8" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-19" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;RRT-based&lt;br&gt;&amp;nbsp;Local Planner&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=5;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="409" y="290" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-20" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Global Trajectory&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;fontSize=18;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="1000" y="-454" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-21" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Motion Planner&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="720" y="330" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-26" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ROS Parameters:&lt;br&gt;/Vessel1/Global_Trajectory&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;/Vessel2/Global_Trajectory&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;/VesselX/Global_Trajectory&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="930" y="-413.5" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-28" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;ROS Topics:&lt;br&gt;/Vessel1/Local_Path&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;/Vessel2/Local_Path&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;/VesselX/&lt;/font&gt;Local_Path&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="610" y="150" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-29" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Perception&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;" parent="1" vertex="1">
+          <mxGeometry x="65" y="290" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="AohX79wTfvgvNfDyPwW6-34" target="AohX79wTfvgvNfDyPwW6-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-260" y="40" />
+              <mxPoint x="-260" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="AohX79wTfvgvNfDyPwW6-34" target="AohX79wTfvgvNfDyPwW6-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="40" />
+              <mxPoint x="220" y="-305" />
+              <mxPoint x="350" y="-305" />
+            </Array>
+            <mxPoint x="325" y="-305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.018;entryY=0.643;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-260" y="40" as="sourcePoint" />
+            <mxPoint x="288" y="-29.346599999999853" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="220" y="40" />
+              <mxPoint x="220" y="-29" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-34" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;VRX Simulation Environment&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="-425" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=none;startFill=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-250" y="-112" />
+              <mxPoint x="-250" y="-411" />
+            </Array>
+            <mxPoint x="-254" y="-112" as="sourcePoint" />
+            <mxPoint x="-159" y="-411.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.01;entryY=0.57;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;" parent="1" source="AohX79wTfvgvNfDyPwW6-37" target="AohX79wTfvgvNfDyPwW6-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-37" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Global_Waypoints_For_User_Defined_Vessels.json&lt;/font&gt;" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.json;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="-380" y="-179.50000000000003" width="126" height="136.44" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" source="AohX79wTfvgvNfDyPwW6-39" target="AohX79wTfvgvNfDyPwW6-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-220" y="-335" />
+              <mxPoint x="475" y="-335" />
+            </Array>
+            <mxPoint x="325" y="-335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-39" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Simulation_Starter&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;strokeWidth=5;" parent="1" vertex="1">
+          <mxGeometry x="-230" y="-151.26000000000002" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-40" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ROS Parameters:&lt;br&gt;/Vessel1_details&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;/Vessel2_details&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;/VesselX_details&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="-159" y="-331.96" width="150" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-41" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ROS Topics:&lt;br&gt;/Vessel1/Local_Path_Args&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;&quot;&gt;/Vessel2/&lt;/span&gt;Local_Path_Args&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;&quot;&gt;.&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;&quot;&gt;.&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;&quot;&gt;.&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;&quot;&gt;/VesselX/&lt;/span&gt;Local_Path_Args&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="300" y="60" width="225" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;startArrow=oval;startFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="-413" as="sourcePoint" />
+            <mxPoint x="287.5" y="-51.90000000000009" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="250" y="-52" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="AohX79wTfvgvNfDyPwW6-19" target="AohX79wTfvgvNfDyPwW6-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="310" />
+              <mxPoint x="610" y="-20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-327" y="249" as="sourcePoint" />
+            <mxPoint x="1098" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-327" y="390" />
+              <mxPoint x="1098" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-45" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Topics of GPS and&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;IMU sensors&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;of every vessel&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-400" y="149" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-46" value="" style="endArrow=none;html=1;rounded=0;endFill=0;strokeWidth=2;startArrow=oval;startFill=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="-29" as="sourcePoint" />
+            <mxPoint x="270" y="-29" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="AohX79wTfvgvNfDyPwW6-49" target="AohX79wTfvgvNfDyPwW6-34" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160" y="420" />
+              <mxPoint x="-440" y="420" />
+              <mxPoint x="-440" y="65" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-49" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Pure Pursuit&lt;br&gt;Controller&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;strokeWidth=5;" parent="1" vertex="1">
+          <mxGeometry x="990" y="250" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-50" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;ROS Topics:&lt;br&gt;/Vessel1/Current_Waypoint&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;/Vessel2/Current_Waypoint&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;/VesselX/&lt;/font&gt;&lt;/font&gt;Current_Waypoint&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="980" y="25" width="230" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="AohX79wTfvgvNfDyPwW6-51" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Actuator Signals&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-440" y="360" width="80" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="jeX8m8mpeWtDfzMC4Biu" name="Page-2">
+    <mxGraphModel dx="1434" dy="-307" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Flowchart for UDV Switch Mechanism and Trajectory Tracker ROS Node&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="1110" width="450" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-2" target="2d-Pc7TmvC24QpOT05_i-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-2" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Start&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="1190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-3" target="2d-Pc7TmvC24QpOT05_i-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-3" value="Take vesselID from the main argument. And&amp;nbsp; load&amp;nbsp; Global_Trajectory from JSON&lt;br&gt;and sub to&amp;nbsp; ROS Topics:&lt;br&gt;/vesselX/gps/fix&lt;br&gt;/vesselX/ahrs&lt;br&gt;/vesselX/perception_udv" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="985" y="1290" width="270" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-4" target="2d-Pc7TmvC24QpOT05_i-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-4" target="2d-Pc7TmvC24QpOT05_i-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-4" value="While the global path is not completed&lt;br&gt;(which means distance to the final waypoint&lt;br&gt;is greater than reaching treshold)" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.loop;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="952.5" y="1450" width="335" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-27" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-7" target="2d-Pc7TmvC24QpOT05_i-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-39" value="False" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-7" target="2d-Pc7TmvC24QpOT05_i-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-7" value="If variable Vessel_is_on_global_path == 1" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="995" y="1585" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-46" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-8" target="2d-Pc7TmvC24QpOT05_i-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-8" value="Elif variable Vessel_is_on_global_path == 0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="995" y="1725" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-12" target="2d-Pc7TmvC24QpOT05_i-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-12" value="If global path&lt;br&gt;is completed" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1450" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-13" target="2d-Pc7TmvC24QpOT05_i-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-13" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Vessel_is_on_global_path ==99&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="777.5" y="1550" width="195" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-17" value="End thread." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="1640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-24" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-21" target="2d-Pc7TmvC24QpOT05_i-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-52" value="False" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-21" target="2d-Pc7TmvC24QpOT05_i-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-21" value="Is the distance to the&lt;br&gt;&amp;nbsp;current global waypoint is smaller than reaching treshold?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1365" y="1685" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.93;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-23" target="2d-Pc7TmvC24QpOT05_i-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1760" y="1750" />
+              <mxPoint x="1760" y="1430" />
+              <mxPoint x="1264" y="1430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-23" value="Jump to the next global waypoint." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1627" y="1720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-29" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-26" target="2d-Pc7TmvC24QpOT05_i-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-32" value="False" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-26" target="2d-Pc7TmvC24QpOT05_i-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1360" y="1750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-26" value="Is there a new encounter?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="1595" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-28" target="2d-Pc7TmvC24QpOT05_i-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-28" value="Set the Vessel_is_on_global_path to 0 and publish to /vesselX/local_path_args" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1486" y="1605" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-30" target="2d-Pc7TmvC24QpOT05_i-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-30" value="Wait until the local path planner ROS node returns a local path from /vesselX/local_path ROS topic" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1506" y="1455" width="180" height="72.5" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.93;entryY=0.013;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-34" target="2d-Pc7TmvC24QpOT05_i-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1770" y="1845" />
+              <mxPoint x="1770" y="1430" />
+              <mxPoint x="1264" y="1430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-34" value="Publish current&amp;nbsp; waypoint" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1530" y="1815" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.004;entryY=0.513;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-35" target="2d-Pc7TmvC24QpOT05_i-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-35" value="Set variable Vessel_is_on_global_path to 0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="1456" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-45" target="2d-Pc7TmvC24QpOT05_i-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-45" target="2d-Pc7TmvC24QpOT05_i-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-45" value="While the local path is not completed&lt;br&gt;(which means distance to the final waypoint&lt;br&gt;is greater than reaching treshold)" style="html=1;dashed=0;whitespace=wrap;shape=mxgraph.dfd.loop;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="952.5" y="1860" width="335" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-55" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-47" target="2d-Pc7TmvC24QpOT05_i-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-58" value="False" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-47" target="2d-Pc7TmvC24QpOT05_i-28">
+          <mxGeometry x="-0.943" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1790" y="2005" />
+              <mxPoint x="1790" y="1635" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-47" value="If the local&lt;br&gt;&amp;nbsp;path is intact" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1065" y="1960" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=16;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-49" target="2d-Pc7TmvC24QpOT05_i-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="1900" />
+              <mxPoint x="710" y="1430" />
+              <mxPoint x="969" y="1430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-49" value="If local path&lt;br&gt;is completed" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="1860" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-57" value="True" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-54" target="2d-Pc7TmvC24QpOT05_i-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-61" value="False" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-54" target="2d-Pc7TmvC24QpOT05_i-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-54" value="Is the distance to the&lt;br&gt;&amp;nbsp;current local waypoint is smaller than reaching treshold?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="2090" width="220" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.001;entryY=0.513;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-56" target="2d-Pc7TmvC24QpOT05_i-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-56" value="Jump to the next local waypoint." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1287.5" y="2125" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=16;entryDy=80;entryPerimeter=0;" edge="1" parent="1" source="2d-Pc7TmvC24QpOT05_i-60" target="2d-Pc7TmvC24QpOT05_i-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2d-Pc7TmvC24QpOT05_i-60" value="Publish current&amp;nbsp; waypoint" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="832.5" y="2125" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="WeBh3d88zb1sxLefTk1H" name="Page-3">
+    <mxGraphModel dx="584" dy="-280" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="34bG-wEbvBp-ONlPjMZK-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Flowchart for UDV Local Path Planner ROS Node&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1110" width="570" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="34bG-wEbvBp-ONlPjMZK-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="34bG-wEbvBp-ONlPjMZK-3" target="34bG-wEbvBp-ONlPjMZK-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34bG-wEbvBp-ONlPjMZK-3" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Start&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="1190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="34bG-wEbvBp-ONlPjMZK-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="34bG-wEbvBp-ONlPjMZK-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1120" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="34bG-wEbvBp-ONlPjMZK-5" value="Take vesselID from the main argument. And&amp;nbsp; load&amp;nbsp; Global_Trajectory from JSON&lt;br&gt;and sub to&amp;nbsp; ROS Topics:&lt;br&gt;/vesselX/gps/fix&lt;br&gt;/vesselX/ahrs&lt;br&gt;/vesselX/local_path_args" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="985" y="1290" width="270" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=14;" edge="1" parent="1" source="2grP2WOPCHirlqvdDIjT-2" target="2grP2WOPCHirlqvdDIjT-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-2" value="Subscribe to&amp;nbsp;&lt;br&gt;/VesselX/generate_local_path" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="987.5" y="1710" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=14;" edge="1" parent="1" source="2grP2WOPCHirlqvdDIjT-4" target="2grP2WOPCHirlqvdDIjT-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-4" value="While not rospy is shutdown" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1042.5" y="1610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-5" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.008;entryY=0.367;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fontSize=14;" edge="1" parent="1" source="2grP2WOPCHirlqvdDIjT-8" target="2grP2WOPCHirlqvdDIjT-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="922.5" y="1885" />
+              <mxPoint x="922.5" y="1632" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=14;" edge="1" parent="1" source="2grP2WOPCHirlqvdDIjT-8" target="2grP2WOPCHirlqvdDIjT-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-7" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="2grP2WOPCHirlqvdDIjT-6">
+          <mxGeometry x="-0.25" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-8" value="If /VesselX/generate_local_path&lt;br&gt;is &amp;gt;0" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="982.5" y="1820" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=14;" edge="1" parent="1" source="2grP2WOPCHirlqvdDIjT-10" target="2grP2WOPCHirlqvdDIjT-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-10" value="Take the start and goal info from topic.&lt;br&gt;And take the vessels in sensing range from&amp;nbsp;&lt;br&gt;/VesselX/vessels_in_ship_domain" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="962.5" y="2030" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;fontSize=14;startArrow=oval;startFill=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="2grP2WOPCHirlqvdDIjT-12" target="2grP2WOPCHirlqvdDIjT-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-12" value="Generate local path" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="2150" width="145" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=15;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=14;" edge="1" parent="1" target="2grP2WOPCHirlqvdDIjT-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1097.5" y="1460" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.45;entryY=-0.083;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;fontSize=14;" edge="1" parent="1" source="2grP2WOPCHirlqvdDIjT-16" target="2grP2WOPCHirlqvdDIjT-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-16" value="Take vesselID from the main argument. And from ros params, take the map size." style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="962.5" y="1490" width="270" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fontSize=14;startArrow=oval;startFill=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="2grP2WOPCHirlqvdDIjT-18" target="2grP2WOPCHirlqvdDIjT-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="952.5" y="2440" />
+              <mxPoint x="952.5" y="2300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-18" value="Publish the local path to&amp;nbsp;&lt;br&gt;/vesselX/local_path" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1021.25" y="2410" width="162.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-19" value="true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=14;startArrow=oval;startFill=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="2grP2WOPCHirlqvdDIjT-21" target="2grP2WOPCHirlqvdDIjT-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-20" value="false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fontSize=14;startArrow=oval;startFill=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="2grP2WOPCHirlqvdDIjT-21" target="2grP2WOPCHirlqvdDIjT-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1317.5" y="2300" />
+              <mxPoint x="1317.5" y="1525" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2grP2WOPCHirlqvdDIjT-21" value="While VesselX/is_on_global_path == 0" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="972.5" y="2250" width="260" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
