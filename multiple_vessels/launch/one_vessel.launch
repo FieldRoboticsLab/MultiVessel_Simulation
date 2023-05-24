@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="namespace" default="wamv"/>
+  <!-- <arg name="init_pose"/>-->
+    <!-- Initial USV location and attitude-->
+
+   <!-- Do we lock the vessel to the world? -->
+  <arg name="wamv_locked" default="false" />
+  <!-- Start paused? -->
+  <arg name="paused" default="false"/>
+
+  <arg name="x"/>
+  <arg name="y"/>
+  <arg name="z"/>
+  <arg name="P"/>
+  <arg name="R"/>
+  <arg name="Y"/>
+
+  <arg name="gps_enabled" default="false"/>
+  <arg name="imu_enabled" default="false"/>
+  <arg name="lidar_enabled" default="false"/>
+  <arg name="camera_enabled" default="false"/>
+
+    <!-- Allow user specified thruster configurations
+      H = stern trusters on each hull
+      T = H with a lateral thruster
+      X = "holonomic" configuration -->
+  <arg name="thrust_config" default="T" />
+
+  <!-- Do we load the VRX sensor suite? -->
+  <arg name="vrx_sensors_enabled" default="false" />
+
+      <!-- Load vessel model -->
+  <!-- Determine which model -->
+  <arg name="h_config" value="$(eval int((thrust_config)=='H'))"/>
+  <arg name="t_config" value="$(eval int((thrust_config)=='T'))"/>
+  <arg name="x_config" value="$(eval int((thrust_config)=='X'))"/>
+  
+  
+
+
+
+  <!-- For now - can only use the T configuration! -->
+  <arg if="$(arg t_config)" name="urdf" default="$(find multiple_vessels)vessel_gazebo/vessel_gazebo.urdf.xacro"/>
+  
+
+  
+  <param name="$(arg namespace)/vessel_description"
+        command="$(find xacro)/xacro &#x002D;&#x002D;inorder '$(arg urdf)'
+        locked:=$(arg wamv_locked)		   
+        thruster_config:=$(arg thrust_config)
+        vrx_sensors_enabled:=$(arg vrx_sensors_enabled)
+        namespace:=$(arg namespace)
+        gps_enabled:=$(arg gps_enabled)
+        imu_enabled:=$(arg imu_enabled)
+        lidar_enabled:=$(arg lidar_enabled)
+        camera_enabled:=$(arg camera_enabled)"/>
+
+  <!-- Spawn model in Gazebo -->
+  <node name="spawn_model" pkg="gazebo_ros" type="spawn_model"
+        args="-x $(arg x) -y $(arg y) -z $(arg z)
+              -R $(arg R) -P $(arg P) -Y $(arg Y)
+              -urdf -param $(arg namespace)/vessel_description -model $(arg namespace)"/>
+
+
+    <!-- The odometry estimator, throttling, fake laser etc. go here -->
+    <!-- All the stuff as from usual vessel launch file -->
+</launch>

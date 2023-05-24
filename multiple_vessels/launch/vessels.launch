@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- BEGIN VESSEL 1-->
+	<group ns="vessel1">
+		<include file="$(find multiple_vessels)/launch/one_vessel.launch" >
+			<arg name="gps_enabled" value="True" />
+			<arg name="imu_enabled" value="True" />
+			<arg name="lidar_enabled" value="False" />
+			<arg name="camera_enabled" value="True" />
+			<arg name="x" value="-1263.3732104409933" />
+			<arg name="y" value="263.280709809181" />
+			<arg name="z" value="0.1" />
+			<arg name="P" value="0" />
+			<arg name="R" value="0" />
+			<arg name="Y" value="4.820025883631687" />
+			<arg name="namespace"  value="vessel1" />
+		</include>
+	</group>
+	<!-- BEGIN VESSEL 2-->
+	<group ns="vessel2">
+		<include file="$(find multiple_vessels)/launch/one_vessel.launch" >
+			<arg name="gps_enabled" value="True" />
+			<arg name="imu_enabled" value="True" />
+			<arg name="lidar_enabled" value="False" />
+			<arg name="camera_enabled" value="True" />
+			<arg name="x" value="-1367.199895670822" />
+			<arg name="y" value="-2442.9206779395327" />
+			<arg name="z" value="0.1" />
+			<arg name="P" value="0" />
+			<arg name="R" value="0" />
+			<arg name="Y" value="1.1290379295344315" />
+			<arg name="namespace"  value="vessel2" />
+		</include>
+	</group>
+	<!-- BEGIN VESSEL 3-->
+	<group ns="vessel3">
+		<include file="$(find multiple_vessels)/launch/one_vessel.launch" >
+			<arg name="gps_enabled" value="True" />
+			<arg name="imu_enabled" value="True" />
+			<arg name="lidar_enabled" value="False" />
+			<arg name="camera_enabled" value="True" />
+			<arg name="x" value="-861.5137926361448" />
+			<arg name="y" value="428.19895018229903" />
+			<arg name="z" value="0.1" />
+			<arg name="P" value="0" />
+			<arg name="R" value="0" />
+			<arg name="Y" value="2.016465414115718" />
+			<arg name="namespace"  value="vessel3" />
+		</include>
+	</group>
+	<!-- BEGIN VESSEL 4-->
+	<group ns="vessel4">
+		<include file="$(find multiple_vessels)/launch/one_vessel.launch" >
+			<arg name="gps_enabled" value="True" />
+			<arg name="imu_enabled" value="True" />
+			<arg name="lidar_enabled" value="False" />
+			<arg name="camera_enabled" value="True" />
+			<arg name="x" value="-989.5501141027288" />
+			<arg name="y" value="-1121.3663866003005" />
+			<arg name="z" value="0.1" />
+			<arg name="P" value="0" />
+			<arg name="R" value="0" />
+			<arg name="Y" value="3.159026753250052" />
+			<arg name="namespace"  value="vessel4" />
+		</include>
+	</group>
+	<!-- BEGIN VESSEL 5-->
+	<group ns="vessel5">
+		<include file="$(find multiple_vessels)/launch/one_vessel.launch" >
+			<arg name="gps_enabled" value="True" />
+			<arg name="imu_enabled" value="True" />
+			<arg name="lidar_enabled" value="False" />
+			<arg name="camera_enabled" value="True" />
+			<arg name="x" value="-1315.282884775044" />
+			<arg name="y" value="-1088.7148779624897" />
+			<arg name="z" value="0.1" />
+			<arg name="P" value="0" />
+			<arg name="R" value="0" />
+			<arg name="Y" value="0.06944457146698708" />
+			<arg name="namespace"  value="vessel5" />
+		</include>
+	</group>
+</launch>

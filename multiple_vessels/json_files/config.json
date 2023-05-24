@@ -1,0 +1,172 @@
+{
+    "simulation":[{
+        "number_of_vessels":4,
+        "number_of_user_defined_vessels":1,
+        "available_sensors":[
+            {
+                "GPS":true,
+                "IMU":true,
+                "LIDAR":false,
+                "Camera":true
+
+            }
+        ]
+        
+
+}],
+"simulation_logger":[{
+    "scatter_distance_treshold":20,
+    "logging_frequency":1,
+    "plotting_interval":300,
+    "plotting_available":true,
+    "logging_available":true
+    
+
+}],
+"local_path_plotter_logger":[{
+    "scatter_distance_treshold":5,
+    "logging_frequency":1,
+    "plotting_interval":300,
+    "plotting_available":true,
+    "logging_available":true
+    
+
+}],
+    "controller":[
+    {
+        "PID_Controller":[
+            {
+                "chosen":false,
+                "Kp_Angular":5000000,
+                "Kp_Linear":3,
+                "Ki":0,
+                "Kd":0
+            }
+        ],
+        "Pure_Pursuit":
+        [
+            {
+                "chosen":true,
+                "look_ahead_distance_local_path_meters":1,
+                "look_ahead_distance_global_path_meters":3,
+                "linear_velocity_propeller_command_local_path":1,
+                "linear_velocity_propeller_command_global_path":1
+
+            }
+        ],
+        "Stanley":
+        [
+            {
+                "chosen":false
+            }
+        ]
+
+    }
+    ],
+
+    "local_path_planning":[
+        {
+            "RRT":[
+                {
+                    "chosen":true,
+                    "map_area_coefficient":1.2,
+                    "vessel_forbidden_zone_coefficient_length":1,
+                    "vessel_forbidden_zone_coefficient_width":0,
+                    "vessel_forbidden_zone_coefficient_draft":0,
+                    "vessel_forbidden_zone_radius_equation":"W*Wc+L*Lc",
+                    "d_max":20,
+                    "reaching_to_local_goal_treshold":20
+                }
+            ]
+        }
+        ],
+
+    "ship_domain":[
+        {
+            "Circular_Ship_Domain":[
+                {
+                    "chosen":true,
+                    "ship_domain_radius_coefficient_length":7,
+                    "ship_domain_radius_coefficient_width":0,
+                    "ship_domain_radius_coefficient_draft":0,
+                    "ship_domain_radius_coefficient_velocity":0,
+                    "ship_domain_radius_equation":"L*Lc"
+                }
+            ]
+        }
+        ],
+
+    "path_tracker":[
+            { 
+                "global_wp_reaching_treshold_meters":10,
+                "local_wp_reaching_treshold_meters":10
+            }
+            ],
+    
+    "Localization":[
+        {
+            "MultiThreading":[{
+                "chosen":true,
+                "Number_Of_Distance_Measurements_For_Each_Thread_chosen":true,
+                "Number_Of_Distance_Measurements_For_Each_Thread":5,
+                "number_of_threads":2
+            }],
+            "Subsribe_to_Topics":[
+                {
+                    "choosen":true,
+                    "sensing_range":800,
+                    "noise":false,
+                    "noise_type":"Gaussian",
+                    "noise_types":
+                    [
+                        {
+                            "Gaussian_Noise":
+                            [{
+                                "z":0,
+                                "mean":0,
+                                "standart_deviation":0
+                            }]
+
+                        },
+                        {
+                            "Sawtooth":
+                            [{
+                                "mean":0,
+                                "standart_deviation":1
+
+                            }]
+                        
+                        }
+                    ]
+                }
+            ],
+            "Get_Positions_From_Gazebo":[{
+                    "choosen":false,
+                    "noise":false,
+                    "noise_type":"Gaussian",
+                    "noise_types":
+                    [
+                        {
+                            "Gaussian_Noise":
+                            [{
+                                "z":0,
+                                "mean":0,
+                                "standart_deviation":0
+                            }]
+
+                        },
+                        {
+                            "Sawtooth":
+                            [{
+                                "mean":0,
+                                "standart_deviation":1
+
+                            }]
+                        
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
