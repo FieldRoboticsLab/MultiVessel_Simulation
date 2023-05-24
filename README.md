@@ -29,14 +29,13 @@ For the tutorials about installing the VRX Classic, please refer to [here](https
 
 <br/>
 
-To install all the dependencies, please enter the command below:
+To install all the dependencies of this project, please enter the commands below:
 ```
 pip install matplotlib
 pip install basemap
 pip install geopy
 install transforms3d
 sudo apt install -y 
-
 ```
 
 ## Installation of Multiple Vessels package
