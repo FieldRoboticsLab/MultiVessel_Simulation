@@ -34,7 +34,7 @@ To install all the dependencies of this project, please enter the commands below
 pip install matplotlib
 pip install basemap
 pip install geopy
-install transforms3d
+pip install transforms3d
 ```
 
 ## Installation of Multiple Vessels package
