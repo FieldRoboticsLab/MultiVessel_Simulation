@@ -25,7 +25,7 @@ The recommended software setup for using this project is below:
 Because of the accurately modeled vessel and sea surface dynamics including
 environmental disturbances such as waves, water current and
 winds, we built this project as a ROS package for the VRX Simulation environment. <br/>
-For the tutorials about installing the VRX Classic, please refer to [here](https://github.com/osrf/vrx/wiki/vrx_classic_system_setup_tutorials)
+For the tutorials about installing the VRX Classic, please refer to [here](https://github.com/osrf/vrx/wiki/vrx_classic_system_setup_tutorials).<br/>
 After downloading the VRX classic, it is recommended to edit the `.bashrc` file to include source command to the vrx_ws workspace. 
 You can open a terminal and enter the command below to open the .bashrc file in  your Ubuntu:
 ```
@@ -71,7 +71,9 @@ python multiple_vessel_simulation_starter.py
 Upon entering this command, the script should initiate the process of starting the simulation environment with default AIS data. The default AIS data consist of 4 vessels. 
 
 ## Running the Multiple Vessels ROS Nodes
-
+From the `simulation_config.json` file in the `json_files` directory of the package, you can set which ROS nodes to start automatically upon launching the simulation environment. 
+In default settings, ROS nodes doesn't start running upon launching the simulation environment.
+TODO: continue from here.
 
 
 ## Reference
