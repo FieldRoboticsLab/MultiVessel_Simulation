@@ -6,7 +6,7 @@ This project is developed in order to test and verify
 motion planning algorithms for unmanned surface vehicles under
 realistic scenarios where multiple vessels travel around as they
 do in the real world. Once a planning algorithm is developed for
-USVs, it is crucial to test a planning algorithm under scenarios hat closely resemble real world conditions, which include environmental disturbances and real marine traffic. 
+USVs, it is crucial to test a planning algorithm under scenarios that closely resemble real world conditions, which include environmental disturbances and real marine traffic. 
 To this end, we present an open-source Virtual RobotX-based simulation
 environment that enables researchers to add an arbitrary number
 of vessels and manually defined their routes, or automatically
