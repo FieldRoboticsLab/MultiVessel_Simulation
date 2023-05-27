@@ -1,6 +1,6 @@
 # MultiVessel_Simulation
 
-Welcome to GitHub repository of the Multiple Vessels Simulation environment. This repository consists the source code and documentation of this project. This project is designed as a ROS package for the VRX-classic simulation environment.
+Welcome to GitHub repository of the Multiple Vessels Simulation environment. This repository consists of the source code and documentation of this project. This project is designed as a ROS package for the VRX-classic simulation environment.
 
 This project is developed in order to test and verify
 motion planning algorithms for unmanned surface vehicles under
@@ -78,7 +78,7 @@ TODO: continue from here.
 
 ## Reference
 
-For detailed descriptions of the algorithms that are used in this peoject, please refer to our publication. 
+For the detailed descriptions of the algorithms used in this peoject, please refer to our publication. 
 Also, if you use the Multiple Vessels simulation in your work, please cite our publication, [COLREG-Compliant Simulation Environment for Verifying USV Motion Planning Algorithms](publication_link_to_here): 
 
 ```
