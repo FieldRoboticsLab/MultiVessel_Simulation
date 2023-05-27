@@ -73,7 +73,22 @@ Upon entering this command, the script should initiate the process of starting t
 ## Running the Multiple Vessels ROS Nodes
 From the `simulation_config.json` file in the `json_files` directory of the package, you can set which ROS nodes to start automatically upon launching the simulation environment. 
 In default settings, ROS nodes doesn't start running upon launching the simulation environment.
-TODO: continue from here.
+In order to start the ROS nodes with one command, you can use `multiple_vessel_node_starter.py` python script. Every Multiple Vessels ROS node is started in a new tab and in the correct order by this python script. You can change which ROS nodes to start with the `multiple_vessel_node_starter.py` python script from `simulation_config.json` file in the `json_files` directory. <br/>
+
+If you want to manually start the ROS nodes, you can open new terminal windows and enter these commands in the given order below:
+```
+python multiple_vessel_global_path_planner_node.py
+python perception_pose_aggregator_node.py
+python multiple_vessel_ship_domain_node.py
+python multiple_vessel_switch_mechanism.py
+python multiple_vessel_local_path_planner_RRT.py
+python multiple_vessel_trajectory_tracker.py
+python multiple_vessel_controller_purePursuit.py
+python simulation_logger_node.py
+```
+
+## About the Multiple Vessels ROS Nodes
+"
 
 
 ## Reference
