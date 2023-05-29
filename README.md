@@ -99,8 +99,11 @@ In this section, we describe how the ROS nodes, launch files, scripts etc. are d
 In this section, we describe every Multiple Vessels ROS Node. These ROS Nodes are designed in order to 
 
 ### Global Path Planner Node
+Global paths for the vessels are set to ROS parameters under the name of `/VesselX/Global_Trajectory` by this ROS node. Also, indexes of the last reached global waypoints are stored by the `/VesselX/Last_Reached_Global_Wp` ROS parameters. This ROS node doesn't update the `/VesselX/Last_Reached_Global_Wp` ROS parameters. Instead, Trajectory Tracker Node is used to track both local and global paths.
 
 ### Perception Module
+Perception module is designed as two ROS nodes. First ROS node of the Perception Module is `Perception Pose Aggregator Node` subscribes to every vessels GPS and AHRS sensor and combines the pose information into two ROS topics named `/Simulation/GPS_List` and `/Simulation/IMU_List`. `Perception Detect Vessels in Sensing Range Node` subcscribes to these two ROS topics and generates the `/VesselX/Perception` ROS topics. These topics 
+
 #### Perception Pose Aggregator Node
 #### Perception Detect Vessels in Sensing Range Node
 
