@@ -129,6 +129,8 @@ multiple_vessels_worlds
 
 ## multivessel_msgs
 
+We defined custom message types such as `Perception.msg`, `VesselDetails.msg` and `VesselPose.msg` under the name of `multivessel_msgs`. These messages are used by perception module,  
+
 ## vessel_gazebo 
 
 ## User Defined Vessels
