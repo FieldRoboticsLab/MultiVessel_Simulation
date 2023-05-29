@@ -125,9 +125,21 @@ is currently generating a local path.
 
 
 ### Local Path Planner Node
+
 ### Trajectory Tracker Node
-### Controller Node
+The Trajectory Tracker ROS node is responsible
+for determining the current waypoint that a vessel should
+navigate to. It takes the `/VesselX/Global_Trajectory`, `/VesselX/Last_Reached_Global_Wp` , `/VesselX/Local_Path` and `/VesselX/Is_On_Global_Path` ROS topics as input. The output of this
+
+node is `/VesselX/Current_Waypoint` ROS topic, which is used by the
+Pure Pursuit Controller ROS node to generate the
+actuator signals.
+
+### Pure Pursuit Controller Node
+Controller ROS node is designed to make the vessels navigate towards the current waypoint. Pure Pursuit algorithm is utilized to control the thruster angles in this ROS node. Thruster commands are set to a static value defined in `config.json` file. With this approach, we achieved to navigate the vessels in a stable way without oscillations.  
+
 ### Logger Node
+In order to visualize and log the simulation runs, we designed a Logger Node. This node uses matplotlib and matplotlib's animation library to visualize the vessel poses, trails of vessels, local and global paths in real time. Also, this node stores the position information in a CSV file similar to the AIS data. The name of this file is `logged_sim_data.csv` in the `simulation_log_files` directory of the package.
 
 ## JSON Files
 
