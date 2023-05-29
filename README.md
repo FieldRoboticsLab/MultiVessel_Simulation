@@ -102,13 +102,28 @@ In this section, we describe every Multiple Vessels ROS Node. These ROS Nodes ar
 Global paths for the vessels are set to ROS parameters under the name of `/VesselX/Global_Trajectory` by this ROS node. Also, indexes of the last reached global waypoints are stored by the `/VesselX/Last_Reached_Global_Wp` ROS parameters. This ROS node doesn't update the `/VesselX/Last_Reached_Global_Wp` ROS parameters. Instead, Trajectory Tracker Node is used to track both local and global paths.
 
 ### Perception Module
-Perception module is designed as two ROS nodes. First ROS node of the Perception Module is `Perception Pose Aggregator Node` subscribes to every vessels GPS and AHRS sensor and combines the pose information into two ROS topics named `/Simulation/GPS_List` and `/Simulation/IMU_List`. `Perception Detect Vessels in Sensing Range Node` subcscribes to these two ROS topics and generates the `/VesselX/Perception` ROS topics. These topics 
-
-#### Perception Pose Aggregator Node
-#### Perception Detect Vessels in Sensing Range Node
+Perception module is designed as two ROS nodes. First ROS node of the Perception Module is `Perception Pose Aggregator Node` subscribes to every vessels GPS and AHRS sensor and combines the pose information into two ROS topics named `/Simulation/GPS_List` and `/Simulation/IMU_List`. `Perception Detect Vessels in Sensing Range Node` subcscribes to these two ROS topics and generates the `/VesselX/Perception` ROS topics. These topics emulate perception for vessels by declaring which vessels are inside a vessel's perception range. Perception range parameter can be set from the `config.json` file.
 
 ### Ship Domain Node
+To determine vessel encounters, we utilized a circular ship
+domain. The coefficients for calculating the radius of the ship
+domain can be assigned from the simulation’s configurations
+file. The Ship domain ROS node performs two processes
+in each iteration. Firstly, it calculates which vessels within
+the perception range of the vessel (from `/VesselX/Perception` ROS topic of the vessel) are inside the vessel’s ship
+domain. Secondly, it publishes information about these vessels
+to the ship domain ROS topic of the vessel named `/VesselX/Vessels_In_Ship_Domain`.
+
 ### Switch Mechanism Node
+This ROS node controls the switching between the local path planner and the global path planner
+by changing the value of the `/VesselX/Is_On_Global_Path` ROS
+topic. If this ROS topic is set to 0, it means that the vessel
+is on a local path. If the ROS topic is set to 1, it means
+that the vessel is on a global path. If the ROS node is set
+to 2, it means that the Local Path Planner ROS node
+is currently generating a local path.
+
+
 ### Local Path Planner Node
 ### Trajectory Tracker Node
 ### Controller Node
