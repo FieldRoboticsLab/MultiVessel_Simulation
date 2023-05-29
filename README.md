@@ -171,12 +171,13 @@ As described in the Launch Files and Scripts section, simulation world named `mu
 
 ## multivessel_msgs
 
-We defined custom message types such as `Perception.msg`, `VesselDetails.msg` and `VesselPose.msg` under the name of `multivessel_msgs`. These messages are used by the Multiple Vessels ROS nodes to communicate the vessel pose and details. ROS topics under the name of /VesselX/Perception and /VesselX/Vessels_In_Ship_Domain are being published to with `Perception.msg` message type.
+We defined custom message types such as `Perception.msg`, `VesselDetails.msg` and `VesselPose.msg` under the name of `multivessel_msgs`. These messages are used by the Multiple Vessels ROS nodes to communicate the vessel pose and details. ROS topics under the name of `/VesselX/Perception` and `/VesselX/Vessels_In_Ship_Domain` are being published to with `Perception.msg` message type.
 
 ## vessel_gazebo 
-In order to spawn vessels inside the simulation world, `vessel_gazebo.urdf.xacro` file is used. We used the unmanned surface vehicles called WAM-V for modelling the vessels in the simulation. T
-## User Defined Vessels
+In order to spawn vessels inside the simulation world, `vessel_gazebo.urdf.xacro` file is used. We used the unmanned surface vehicles called WAM-V for modelling the vessels in the simulation. Depending on the parameters 
 
+## User Defined Vessels
+User Defined Vessels are designed to be controlled by the motion planning algorithms developed by user. These vessels are not controlled by Multiple Vessel ROS nodes that are mentioned in the sections above. Instead, these vessels have their own ROS nodes. In default, `user_defined_perception`, `user_defined_switch_mechanism`, `user_defined_local_path_planner_RRT`, `user_defined_global_path_planner_node`, `user_defined_controller_purePursuit` ROS nodes are available in the `nodes/user_defined_vessel_nodes` directory of the package. Settings and parameters for user defined vessels are set by `config_user_defined.json` file. Global paths can be set for user defined vessels by `Global_Waypoints_userDefinedVessels.json` file. If the motion planning approach for user defined vessels doesn't employ global paths, `Global_Waypoints_userDefinedVessels.json` file is only used for setting spawning positions for User Defined Vessels.
 
 ## Reference
 
