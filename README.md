@@ -13,6 +13,33 @@ of vessels and manually defined their routes, or automatically
 generate them from AIS data. Each vessel is equipped with global
 and local motion controllers complying with COLREGs.
 
+# Table of Contents
+
+- [How to Install and Run the Project](#how-to-install-and-run-the-project)
+  - [Recommended Software Setup](#recommended-software-setup)
+  - [Depencendies](#depencendies)
+  - [Installation of Multiple Vessels package](#installation-of-multiple-vessels-package)
+  - [Launching the Multiple Vessels Simulation Environment](#launching-the-multiple-vessels-simulation-environment)
+  - [Running the Multiple Vessels ROS Nodes](#running-the-multiple-vessels-ros-nodes)
+- [Detailed Information about the Project](#detailed-information-about-the-project)
+  - [Multiple Vessels ROS Nodes](#multiple-vessels-ros-nodes)
+    - [Global Path Planner Node](#global-path-planner-node)
+    - [Perception Module](#perception-module)
+    - [Ship Domain Node](#ship-domain-node)
+    - [Switch Mechanism Node](#switch-mechanism-node)
+    - [Local Path Planner Node](#local-path-planner-node)
+    - [Trajectory Tracker Node](#trajectory-tracker-node)
+    - [Pure Pursuit Controller Node](#pure-pursuit-controller-node)
+    - [Logger Node](#logger-node)
+  - [JSON Files](#json-files)
+  - [Launch Files and Scripts](#launch-files-and-scripts)
+  - [World Files](#world-files)
+  - [multivessel\_msgs](#multivessel_msgs)
+  - [vessel\_gazebo](#vessel_gazebo)
+  - [User Defined Vessels](#user-defined-vessels)
+  - [Reference](#reference)
+
+
 # How to Install and Run the Project
 
 In this section, we describe how to install and run this project. 
@@ -125,6 +152,22 @@ is currently generating a local path.
 
 
 ### Local Path Planner Node
+
+The Local Path Planner ROS node is designed to implement COLREGs-Compliant motion planning when an encounter happens.
+To implement a vessel motion planning that complies
+with COLREGs, the RRT path planning algorithm is chosen.
+During tracking of the global path or local path, the local
+path planner stays on standby. When the Switch Mechanism ROS node
+activates the local path planner to generate a new path, it
+generates the virtual obstacles for other vessels inside the local
+path planning bounding box. The RRT algorithm is executed to
+find the COLREGs-compliant path for the encounter situation, and it is published to the vessel n/local path ROS topic. The
+Trajectory Tracker ROS node can then make the vessel
+controller track the local path and the Switch Mechanism
+ROS node can check for interference to the local path by other
+vessels.
+
+TODO: Include the pictures of virtual obstacles in here.
 
 ### Trajectory Tracker Node
 The Trajectory Tracker ROS node is responsible
