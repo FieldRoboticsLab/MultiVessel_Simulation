@@ -1,15 +1,15 @@
 # MultiVessel_Simulation
 
-Welcome to GitHub repository of the Multiple Vessels Simulation environment. This repository consists of the source code and documentation of this project. This project is designed as a ROS package for the VRX-classic simulation environment.
+Welcome to the GitHub repository of the Multiple Vessels Simulation environment. This repository consists of the source code and documentation of this project. This project is designed as a ROS package for the VRX-classic simulation environment.
 
-This project is developed in order to test and verify
-motion planning algorithms for unmanned surface vehicles under
+This project has been developed to test and verify
+motion planning algorithms for unmanned surface vehicles (USVs) under
 realistic scenarios where multiple vessels travel around as they
 do in the real world. Once a planning algorithm is developed for
-USVs, it is crucial to test a planning algorithm under scenarios that closely resemble real world conditions, which include environmental disturbances and real marine traffic. 
-To this end, we present an open-source Virtual RobotX-based simulation
-environment that enables researchers to add an arbitrary number
-of vessels and manually defined their routes, or automatically
+USVs, it is crucial to test it under scenarios that closely resemble real-world conditions, including environmental disturbances and real marine traffic. 
+To achieve this goal, we present an open-source Virtual RobotX-based simulation
+environment that allows researchers to add an arbitrary number
+of vessels and manually define their routes, or automatically
 generate them from AIS data. Each vessel is equipped with global
 and local motion controllers complying with COLREGs.
 
@@ -227,10 +227,10 @@ User Defined Vessels are designed to be controlled by the motion planning algori
  <br/>
  
 ## Block Diagram of the ROS Infrastructure
-Detailed block diagram of the developed ROS infrastructure is shown below. In this block diagram, ROS
-topics are depicted in blue, ROS parameters are depicted in
+The detailed block diagram of the developed ROS infrastructure is shown below. In this block diagram, ROS
+topics are depicted in blue, and ROS parameters are depicted in
 green. The ROS nodes are represented as white squares with
-black borders. In some ROS topics and parameters, three dots
+black borders. In certain ROS topics and parameters, three dots
 indicate that they are parametrically generated for every vessel
 in the simulation environment.
 
