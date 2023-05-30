@@ -121,6 +121,9 @@ python simulation_logger_node.py
 # Detailed Information about the Project
 
 In this section, we describe how the ROS nodes, launch files, scripts etc. are designed and works. 
+Simplified block diagram of the developed Gazebo-ROS infrastructure is shown below.
+
+![blockDiagramSimplified](https://github.com/FieldRoboticsLab/MultiVessel_Simulation/blob/main/multiple_vessels/images/multiVessel_block_diagram%20(3)-Page-9.drawio.png)
 
 ## Multiple Vessels ROS Nodes
 In this section, we describe every Multiple Vessels ROS Node. These ROS Nodes are designed in order to 
@@ -221,6 +224,17 @@ In order to spawn vessels inside the simulation world, `vessel_gazebo.urdf.xacro
 
 ## User Defined Vessels
 User Defined Vessels are designed to be controlled by the motion planning algorithms developed by user. These vessels are not controlled by Multiple Vessel ROS nodes that are mentioned in the sections above. Instead, these vessels have their own ROS nodes. In default, `user_defined_perception`, `user_defined_switch_mechanism`, `user_defined_local_path_planner_RRT`, `user_defined_global_path_planner_node`, `user_defined_controller_purePursuit` ROS nodes are available in the `nodes/user_defined_vessel_nodes` directory of the package. Settings and parameters for user defined vessels are set by `config_user_defined.json` file. Global paths can be set for user defined vessels by `Global_Waypoints_userDefinedVessels.json` file. If the motion planning approach for user defined vessels doesn't employ global paths, `Global_Waypoints_userDefinedVessels.json` file is only used for setting spawning positions for User Defined Vessels.
+ <br/>
+ 
+## Block Diagram of the ROS Infrastructure
+Detailed block diagram of the developed ROS infrastructure is shown below. In this block diagram, ROS
+topics are depicted in blue, ROS parameters are depicted in
+green. The ROS nodes are represented as white squares with
+black borders. In some ROS topics and parameters, three dots
+indicate that they are parametrically generated for every vessel
+in the simulation environment.
+
+![detailedBlockDiagram](https://github.com/FieldRoboticsLab/MultiVessel_Simulation/blob/main/multiple_vessels/images/multiVessel_block_diagram%20(3)-Page-7.drawio.png)
 
 ## Reference
 
