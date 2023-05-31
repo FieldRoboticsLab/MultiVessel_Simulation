@@ -126,7 +126,7 @@ The simplified block diagram of the developed Gazebo-ROS infrastructure is shown
 ![blockDiagramSimplified](https://github.com/FieldRoboticsLab/MultiVessel_Simulation/blob/main/multiple_vessels/images/multiVessel_block_diagram%20(3)-Page-9.drawio.png)
 
 ## Multiple Vessels ROS Nodes
-In this section, we describe every Multiple Vessels as a ROS node. These ROS nodes are designed in order to ????????
+In this section, we describe every Multiple Vessels as a ROS node. These ROS nodes are designed to tackle navigation for vessels. 
 
 ### Global Path Planner Node
 Global paths for the vessels are set to ROS parameters under the name of `/VesselX/Global_Trajectory` by this ROS node. Also, indexes of the last reached global waypoints are stored by the `/VesselX/Last_Reached_Global_Wp` ROS parameters. This ROS node doesn't update the `/VesselX/Last_Reached_Global_Wp` ROS parameters. Instead, Trajectory Tracker Node is used to track both local and global paths.
@@ -176,7 +176,6 @@ TODO: Include the pictures of virtual obstacles in here.
 The Trajectory Tracker ROS node is responsible
 for determining the current waypoint that a vessel should
 navigate to. It takes the `/VesselX/Global_Trajectory`, `/VesselX/Last_Reached_Global_Wp` , `/VesselX/Local_Path` and `/VesselX/Is_On_Global_Path` ROS topics as input. The output of this
-
 node is `/VesselX/Current_Waypoint` ROS topic, which is used by the
 Pure Pursuit Controller ROS node to generate the
 actuator signals.
