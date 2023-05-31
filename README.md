@@ -120,13 +120,13 @@ python simulation_logger_node.py
 
 # Detailed Information about the Project
 
-In this section, we describe how the ROS nodes, launch files, scripts etc. are designed and works. 
-Simplified block diagram of the developed Gazebo-ROS infrastructure is shown below.
+In this section, we describe how the ROS nodes, launch files, scripts etc. are designed and work. 
+The simplified block diagram of the developed Gazebo-ROS infrastructure is shown below.
 
 ![blockDiagramSimplified](https://github.com/FieldRoboticsLab/MultiVessel_Simulation/blob/main/multiple_vessels/images/multiVessel_block_diagram%20(3)-Page-9.drawio.png)
 
 ## Multiple Vessels ROS Nodes
-In this section, we describe every Multiple Vessels ROS Node. These ROS Nodes are designed in order to 
+In this section, we describe every Multiple Vessels as a ROS node. These ROS nodes are designed in order to ????????
 
 ### Global Path Planner Node
 Global paths for the vessels are set to ROS parameters under the name of `/VesselX/Global_Trajectory` by this ROS node. Also, indexes of the last reached global waypoints are stored by the `/VesselX/Last_Reached_Global_Wp` ROS parameters. This ROS node doesn't update the `/VesselX/Last_Reached_Global_Wp` ROS parameters. Instead, Trajectory Tracker Node is used to track both local and global paths.
