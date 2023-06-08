@@ -237,7 +237,7 @@ in the simulation environment.
 
 ## Reference
 
-For the detailed descriptions of the algorithms used in this peoject, please refer to our publication. 
+For the detailed descriptions of the algorithms used in this project, please refer to our publication. 
 Also, if you use the Multiple Vessels simulation in your work, please cite our publication, [COLREG-Compliant Simulation Environment for Verifying USV Motion Planning Algorithms](publication_link_to_here): 
 
 ```
