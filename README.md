@@ -76,6 +76,7 @@ pip install basemap
 pip install geopy
 pip install transforms3d
 sudo apt install ros-noetic-hector-gazebo-plugins
+sudo apt-get install wmctrl
 
 ```
 
