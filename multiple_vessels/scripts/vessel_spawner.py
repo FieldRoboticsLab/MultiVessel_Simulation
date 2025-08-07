@@ -20,7 +20,7 @@ import os
 class USV_SPAWN():
   def __init__(self):
     
-    self.path = "~/vrx_ws/src/vrx/multiple_vessels"
+    self.path = "~/vrx_ws/src/vrx/MultiVessel_Simulation/multiple_vessels"
     self.full_path = os.path.expanduser(self.path)
     
     self.vessel_count = int(rospy.get_param("/vessel_count"))#get the number of how many USV's do we spawn in this run
@@ -265,7 +265,7 @@ if __name__ == '__main__':
   my_spawner_object.spawn_usv()
   
 
-  file_path =  "~/vrx_ws/src/vrx/multiple_vessels"
+  file_path =  "~/vrx_ws/src/vrx/MultiVessel_Simulation/multiple_vessels"
   file_full_path= os.path.expanduser(file_path)
   
   #open and read the file after the appending:

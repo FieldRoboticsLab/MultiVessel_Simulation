@@ -253,7 +253,7 @@ class Pose_Publisher():
 if __name__ == '__main__':
     rospy.init_node('perception_slave_threads', anonymous=True)
 
-    path = "~/vrx_ws/src/vrx/multiple_vessels"
+    path = "~/vrx_ws/src/vrx/MultiVessel_Simulation/multiple_vessels"
     full_path = os.path.expanduser(path)
 
     with open(full_path+'/json_files/config.json','r') as f:    

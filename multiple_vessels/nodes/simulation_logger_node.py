@@ -76,7 +76,7 @@ class Vessel_Details():
 class Logger():
     def __init__(self):
         #Read the JSON config file
-        self.path = "~/vrx_ws/src/vrx/multiple_vessels"
+        self.path = "~/vrx_ws/src/vrx/MultiVessel_Simulation/multiple_vessels"
         self.full_path = os.path.expanduser(self.path)
         
         with open(self.full_path+'/json_files/config.json','r') as f:    
@@ -196,8 +196,8 @@ class Logger():
     def CallbackGpsList(self,gpsList_msg):
         self.gps_list = gpsList_msg.data
 
-    def CallbackImuList(self,gpsList_msg):
-        self.imu_list = gpsList_msg.data
+    def CallbackImuList(self,imuList_msg):
+        self.imu_list = imuList_msg.data
 
     def Init_Plotting(self):
         self.plots = []

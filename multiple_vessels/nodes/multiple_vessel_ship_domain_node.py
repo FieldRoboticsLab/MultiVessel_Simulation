@@ -22,13 +22,13 @@ import threading
 import json
 from geopy import distance
 import os
-from multivessel_msgs.msg import Vessel_Pose,Perception
+from multivessel_msgs.msg import VesselPose,Perception
 
 class Vessel_ship_domain(threading.Thread):
     def __init__(self, VesselID_):
         threading.Thread.__init__(self)
         
-        self.path = "~/vrx_ws/src/vrx/multiple_vessels"
+        self.path = "~/vrx_ws/src/vrx/MultiVessel_Simulation/multiple_vessels"
         self.full_path = os.path.expanduser(self.path)
         
         with open(self.full_path+'/json_files/config.json','r') as f:    

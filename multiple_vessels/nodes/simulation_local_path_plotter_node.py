@@ -108,7 +108,7 @@ class Local_plotter():
         self.vesselID = VesselID_
 
         #Read the JSON config file
-        self.path = "~/vrx_ws/src/vrx/multiple_vessels"
+        self.path = "~/vrx_ws/src/vrx/MultiVessel_Simulation/multiple_vessels"
         self.full_path = os.path.expanduser(self.path)
         
         with open(self.full_path+'/json_files/config.json','r') as f:    

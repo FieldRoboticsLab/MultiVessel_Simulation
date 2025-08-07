@@ -37,7 +37,7 @@ from multivessel_msgs.msg import VesselPose,Perception
 class Switch_Mechanism(threading.Thread):
     def __init__(self, VesselID_):
         threading.Thread.__init__(self)
-        self.path = "~/vrx_ws/src/vrx/multiple_vessels"
+        self.path = "~/vrx_ws/src/vrx/MultiVessel_Simulation/multiple_vessels"
         self.full_path = os.path.expanduser(self.path)
         
         with open(self.full_path+'/json_files/config.json','r') as f:    
@@ -520,10 +520,15 @@ AND
         if Last_Reached_Global_WpRosParam == -1:
             Last_Reached_Global_WpRosParam = 0
 
+        total_waypoints = len(goalRosParam) // 5
+
+        print("goalRosParam",len(goalRosParam))
+        print("Last_Reached_Global_WpRosParam",Last_Reached_Global_WpRosParam)
+        print("(5*(Last_Reached_Global_WpRosParam+1))+0",(5*(Last_Reached_Global_WpRosParam+1))+0)
         #In here, this function should skip to the next global waypoint if the current global waypoint is inside the local path bounding box. 
         while ( len(goalRosParam) / 5 )> Last_Reached_Global_WpRosParam :#We check for this here as well. Because we don't want to exceed the index point. 
-            goalLat = goalRosParam[(5*(Last_Reached_Global_WpRosParam+1))+0]
-            goalLon = goalRosParam[(5*(Last_Reached_Global_WpRosParam+1))+1]
+            goalLat = goalRosParam[(5*(Last_Reached_Global_WpRosParam))+0]
+            goalLon = goalRosParam[(5*(Last_Reached_Global_WpRosParam))+1]
             goal = (goalLat,goalLon)
             current_pos = (self.current_lat,self.current_lon)
             distance_in_between = distance.distance(goal, current_pos).meters

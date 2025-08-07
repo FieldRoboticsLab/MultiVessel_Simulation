@@ -54,7 +54,7 @@ class UDV_Perception(threading.Thread):
     def __init__(self, VesselID_):
         threading.Thread.__init__(self)
         #Read the JSON config file
-        self.path = "~/vrx_ws/src/vrx/multiple_vessels"
+        self.path = "~/vrx_ws/src/vrx/MultiVessel_Simulation/multiple_vessels"
         self.full_path = os.path.expanduser(self.path)
         
         with open(self.full_path+'/json_files/config_user_defined.json','r') as f:    

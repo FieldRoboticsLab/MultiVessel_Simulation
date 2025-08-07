@@ -18,7 +18,7 @@ import os
 class Vessel_Global_Path_Planner():
     def __init__(self,vessel_count_):
 
-        self.path = "~/vrx_ws/src/vrx/multiple_vessels"
+        self.path = "~/vrx_ws/src/vrx/MultiVessel_Simulation/multiple_vessels"
         self.full_path = os.path.expanduser(self.path)
 
         with open(self.full_path+'/json_files/Global_Waypoints_userDefinedVessels.json','r') as f:    

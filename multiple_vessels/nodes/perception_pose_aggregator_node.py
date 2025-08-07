@@ -133,7 +133,7 @@ class Vessel_Subscriber():
 class Threader():
     def __init__(self):
         #Read the JSON config file
-        self.path = "~/vrx_ws/src/vrx/multiple_vessels"
+        self.path = "~/vrx_ws/src/vrx/MultiVessel_Simulation/multiple_vessels"
         self.full_path = os.path.expanduser(self.path)
         
         with open(self.full_path+'/json_files/config.json','r') as f:    
@@ -293,7 +293,7 @@ class Threader():
         with open('Perception_Distance_Measurement_List.json','w') as myfile:
             json.dump(self.distance_measurementListForThread,myfile)
 
-        os.system("gnome-terminal -- bash -c \"source ~/vrx_ws/devel/setup.bash;python perception_detect_vessels_in_sensing_range_node.py; bash\" ")
+        os.system("gnome-terminal -- bash -c \"source ~/vrx_ws/devel/setup.bash;python3 perception_detect_vessels_in_sensing_range_node.py; bash\" ")
        
         self.ROS_Topic_Publish_Loop()
 

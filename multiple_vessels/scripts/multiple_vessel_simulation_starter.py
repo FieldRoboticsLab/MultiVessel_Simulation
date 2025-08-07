@@ -30,7 +30,7 @@ from geopy import distance
 
 class Simulation():
     def __init__(self):
-        self.path = "~/vrx_ws/src/vrx/multiple_vessels"
+        self.path = "~/vrx_ws/src/vrx/MultiVessel_Simulation/multiple_vessels"
         self.full_path = os.path.expanduser(self.path)
         
         with open(self.full_path+'/json_files/config.json','r') as f:    
@@ -64,7 +64,7 @@ class Simulation():
         
         #self.Vessel_Controller_setParam()
 
-        self.path = "~/vrx_ws/src/vrx/multiple_vessels"
+        self.path = "~/vrx_ws/src/vrx/MultiVessel_Simulation/multiple_vessels"
         self.full_path = os.path.expanduser(self.path)
         self.UsvSpawner()
 
@@ -83,7 +83,7 @@ class Simulation():
         #Edits the multiple_vessels.world file with xmltree
         #https://www.youtube.com/watch?v=bWfAD7wAfOI
 
-        self.world_path = "~/vrx_ws/src/vrx/multiple_vessels/multiple_vessels_worlds"
+        self.world_path = "~/vrx_ws/src/vrx/MultiVessel_Simulation/multiple_vessels/multiple_vessels_worlds"
         self.full_world_path =  os.path.expanduser(self.world_path)
         self.xmlFile = self.full_world_path + "/multiple_vessels.world"
         self.tree = ET.parse(self.xmlFile)

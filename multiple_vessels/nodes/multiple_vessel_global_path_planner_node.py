@@ -17,7 +17,7 @@ import os
 
 class Vessel_Global_Path_Planner():
     def __init__(self,vessel_count_):
-        self.path = "~/vrx_ws/src/vrx/multiple_vessels"
+        self.path = "~/vrx_ws/src/vrx/MultiVessel_Simulation/multiple_vessels"
         self.full_path = os.path.expanduser(self.path)
         #One object of this class will be called for each vessel.
 
