@@ -153,7 +153,8 @@ GAZ=gazebo11
 sudo apt install ${GAZ} lib${GAZ}-dev ros-${DIST}-gazebo-plugins ros-${DIST}-gazebo-ros ros-${DIST}-hector-gazebo-plugins ros-${DIST}-joy ros-${DIST}-joy-teleop ros-${DIST}-key-teleop ros-${DIST}-robot-localization ros-${DIST}-robot-state-publisher ros-${DIST}-joint-state-publisher ros-${DIST}-rviz ros-${DIST}-ros-base ros-${DIST}-teleop-tools ros-${DIST}-teleop-twist-keyboard ros-${DIST}-velodyne-simulator ros-${DIST}-xacro ros-${DIST}-rqt ros-${DIST}-rqt-common-plugins
 ```
 
-After setting the dependencies for VRX Classic, it can be installed to vrx_ws workspace
+After setting the dependencies for VRX Classic, it can be installed to vrx_ws workspace.
+
 Instructions to set up a workspace and clone the VRX Classic is also available at: https://github.com/osrf/vrx/wiki/vrx_create_workspace
 
 ```
