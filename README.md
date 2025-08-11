@@ -17,6 +17,8 @@ and local motion controllers complying with COLREGs.
 
 - [How to Install and Run the Project](#how-to-install-and-run-the-project)
   - [Recommended Software Setup](#recommended-software-setup)
+  - [Install ROS Noetic](#install-ros-noetic)
+  - [Install VRX Classic](#install-vrx-classic)
   - [Depencendies](#depencendies)
   - [Installation of Multiple Vessels package](#installation-of-multiple-vessels-package)
   - [Launching the Multiple Vessels Simulation Environment](#launching-the-multiple-vessels-simulation-environment)
@@ -51,6 +53,158 @@ The recommended software setup for using this project is below:
 * Gazebo 11.6.0+
 * ROS Noetic
 
+## Install ROS Noetic 
+
+Instuctions on how to install ROS Noetic is also avaliable at: https://wiki.ros.org/noetic/Installation/Ubuntu 
+
+
+```
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+```
+
+```
+sudo apt install curl # if you haven't already installed curl
+```
+
+```
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+```
+
+```
+sudo apt update
+```
+
+```
+sudo apt install ros-noetic-desktop-full
+```
+
+It is necessary to source the ROS Noetic in terminal before running any ROS nodes. In order to do that automatically, .bashrc file can be edited with the command below:
+```
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+```
+
+```
+source ~/.bashrc
+```
+
+```
+sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+```
+
+```
+sudo apt install python3-rosdep
+```
+
+```
+sudo rosdep init
+```
+
+```
+rosdep update
+```
+
+## Install VRX Classic
+
+This simulation environment is designed as a package for the VRX Classic simulation environment. Therefore, it is necessary to download VRX Classic.
+
+Instructions to download the VRX Classic is also available at: https://github.com/osrf/vrx/wiki/vrx_classic_host_install_tutorial
+
+```
+sudo apt update
+```
+
+```
+sudo apt full-upgrade
+```
+
+```
+sudo apt install -y build-essential cmake cppcheck curl git gnupg libeigen3-dev libgles2-mesa-dev lsb-release pkg-config protobuf-compiler qtbase5-dev python3-dbg python3-pip python3-venv ruby software-properties-common wget 
+```
+
+```
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+```
+
+```
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+```
+
+```
+sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
+```
+
+```
+wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
+```
+
+```
+sudo apt update
+```
+
+```
+DIST=noetic
+```
+
+```
+GAZ=gazebo11
+```
+
+```
+sudo apt install ${GAZ} lib${GAZ}-dev ros-${DIST}-gazebo-plugins ros-${DIST}-gazebo-ros ros-${DIST}-hector-gazebo-plugins ros-${DIST}-joy ros-${DIST}-joy-teleop ros-${DIST}-key-teleop ros-${DIST}-robot-localization ros-${DIST}-robot-state-publisher ros-${DIST}-joint-state-publisher ros-${DIST}-rviz ros-${DIST}-ros-base ros-${DIST}-teleop-tools ros-${DIST}-teleop-twist-keyboard ros-${DIST}-velodyne-simulator ros-${DIST}-xacro ros-${DIST}-rqt ros-${DIST}-rqt-common-plugins
+```
+
+After setting the dependencies for VRX Classic, it can be installed to vrx_ws workspace
+Instructions to set up a workspace and clone the VRX Classic is also available at: https://github.com/osrf/vrx/wiki/vrx_create_workspace
+
+```
+mkdir -p ~/vrx_ws/src
+```
+
+```
+cd ~/vrx_ws/src
+```
+
+```
+git clone https://github.com/osrf/vrx -b gazebo_classic
+```
+
+```
+source /opt/ros/noetic/setup.bash
+```
+
+```
+cd ~/vrx_ws
+```
+
+```
+catkin_make
+```
+
+```
+source  ~/vrx_ws/devel/setup.bash
+```
+
+It is necessary to source the vrx_ws in terminal before running any nodes of VRX Classic. In order to do that automatically, .bashrc file can be edited with the command below:
+```
+echo "source  ~/vrx_ws/devel/setup.bash" >> ~/.bashrc
+```
+
+In order to test the installation, run the command below to launch VRX Classic
+
+```
+roslaunch vrx_gazebo vrx.launch
+```
+
+If you notice that the real time factor is low and the simulation looks like a bit dark, it is probably because the simulation is not using the GPU of your system. 
+
+In order to resolve that, run the command below and restart your system. Make sure Nvidia graphics drivers are installed and being used from the additional drivers window.
+
+```
+sudo prime-select nvidia
+```
+
+
+
 ## Depencendies
 
 Because of the accurately modeled vessel and sea surface dynamics including
@@ -75,6 +229,7 @@ pip install matplotlib
 pip install basemap
 pip install geopy
 pip install transforms3d
+pip install nest_asyncio
 sudo apt install ros-noetic-hector-gazebo-plugins
 sudo apt-get install wmctrl
 
@@ -120,6 +275,21 @@ python multiple_vessel_trajectory_tracker.py
 python multiple_vessel_controller_purePursuit.py
 python simulation_logger_node.py
 ```
+
+If you get an error like this, suggesting that the command 'python' not found:
+```
+frl@frl-2004:~$ python multiple_vessel_global_path_planner_node.py
+Command 'python' not found, did you mean:
+command 'python3' from deb python3
+command 'python' from deb python-is-python3
+```
+
+Enter these commands below to set your terminal to call python3 whenever you call python
+```
+echo 'alias python=python3' >> ~/.bashrc
+source ~/.bashrc
+```
+
 
 # Detailed Information about the Project
 
